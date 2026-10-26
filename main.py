@@ -2,8 +2,7 @@ import sys
 import platform
 
 from hello import __version__
-from hello.greeting import greet, sum_range
-
+from hello.greeting import factorial, greet, sum_range
 
 def main() -> int:
     print(f"hello-python version {__version__}")
@@ -12,7 +11,8 @@ def main() -> int:
     print(f"Arch: {platform.machine()}")
     print(greet("GitHub"))
     print(f"Sum 1..10 = {sum_range(1, 10)}")
-
+    print(f"Factorial 5 = {factorial(5)}")
+    
     if len(sys.argv) > 1:
         print("Аргументы:")
         for i, arg in enumerate(sys.argv[1:], start=1):

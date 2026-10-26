@@ -1,6 +1,6 @@
 [project]
 name = "hello-python"
-version = "0.1.0"
+version = "0.2.0"
 description = "Demo Python CLI with PyInstaller and CI/CD"
 requires-python = ">=3.10"
 
